@@ -4,7 +4,7 @@ class CGlobalVariables
 {
 public:
 	int iAimbotIndex = -1;
-	
+
 	float menu_style = 1;
 	float menu_color = 0;
 
@@ -46,7 +46,7 @@ public:
 	float autoairblast_silent;
 
 	float melee_enable;
-	
+
 	float vis_switch;
 
 	float esp_switch;
@@ -60,7 +60,7 @@ public:
 	float esp_health;
 	float esp_bones;
 	float esp_aimbothighlights = true;
-    float esp_smileyface;
+	float esp_smileyface;
 	float esp_view_lines;
 
 	float radar_switch;
@@ -92,7 +92,8 @@ public:
 	float misc_chatspam;
 	float misc_chatspam_newlines;
 	float misc_cheatsbypass;
-
+	float aimbot_resolver;
+	float aimbot_resolver_fakeup;
 	float hvh_switch;
 	float hvh_aaswitch;
 	float hvh_aap;
@@ -116,7 +117,7 @@ public:
 	float removecond_automedkit;
 	float removecond_autoinstantcap;
 	float removecond_disableonattack = true;
-	
+
 
 	float originalCrosshair;
 

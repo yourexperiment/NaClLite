@@ -169,6 +169,22 @@ void CCheatMenu::Render(void)
 		}
 	}
 
+	i = AddItem(i, "HvH", &gCvars.misc_switch, 0, 1, 1, true);
+	if (gCvars.misc_switch)
+	{
+		i = AddItem(i, " - Anti Aim", &gCvars.hvh_aaswitch, 0, 1, 1, false);
+		if (gCvars.hvh_aaswitch)
+		{
+			i = AddItem(i, "  * Pitch", &gCvars.hvh_aap, 0, 4, 1, false);
+			i = AddItem(i, "  * Yaw", &gCvars.hvh_aay, 0, 7, 1, false);
+		}
+		i = AddItem(i, " - Resolver", &gCvars.aimbot_resolver, 0, 1, 1, false);
+		if (gCvars.aimbot_resolver)
+		{
+			i = AddItem(i, "  * Correct Fake Up", &gCvars.aimbot_resolver_fakeup, 0, 1, 1, false);
+		}
+	}
+
 	i = AddItem(i, "Misc", &gCvars.misc_switch, 0, 1, 1, true);
 	if (gCvars.misc_switch)
 	{

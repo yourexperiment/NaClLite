@@ -65,6 +65,9 @@
     <ClCompile Include="QAngle.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="HvH.cpp">
+      <Filter>Hacks\HvH</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CDrawManager.h">
@@ -149,6 +152,9 @@
     <ClInclude Include="QAngle.h">
       <Filter>Headers</Filter>
     </ClInclude>
+    <ClInclude Include="HvH.h">
+      <Filter>Hacks\HvH</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Headers">
@@ -171,6 +177,9 @@
     </Filter>
     <Filter Include="Hacks\Misc">
       <UniqueIdentifier>{338f8ff1-8354-487f-9830-cc45a33039d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hacks\HvH">
+      <UniqueIdentifier>{0112088d-3049-4d72-92c0-479950f066ae}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
