@@ -90,6 +90,7 @@ public:
 	float misc_noscope_drawlines;
 	float misc_noisemaker_spam;
 	float misc_chatspam;
+	float misc_miniguntoggle;
 	float misc_chatspam_newlines;
 	float misc_cheatsbypass;
 	float aimbot_resolver;

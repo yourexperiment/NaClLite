@@ -193,6 +193,7 @@ void CCheatMenu::Render(void)
 		{
 			i = AddItem(i, "  * Bunnyhop", &gCvars.misc_bunnyhop, 0, 1, 1, false);
 			i = AddItem(i, "  * Autostrafe", &gCvars.misc_autostrafe, 0, 1, 1, false);
+			i = AddItem(i, "  * Minigun Toggle", &gCvars.misc_miniguntoggle, 0, 1, 1, false);
 			i = AddItem(i, "  * Taunt Slide", &gCvars.misc_tauntslide, 0, 1, 1, false);
 			i = AddItem(i, "  * No Push", &gCvars.misc_nopush, 0, 1, 1, false);
 			i = AddItem(i, "  * Cheats Bypass", &gCvars.misc_cheatsbypass, 0, 1, 1, false);

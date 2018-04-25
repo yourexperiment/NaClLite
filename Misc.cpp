@@ -21,9 +21,10 @@ void CMisc::Run(CBaseEntity* pLocal, CUserCmd* pCommand)
 	if (pLocal->GetLifeState() != LIFE_ALIVE)
 		return;
 
+	auto wepid = pLocal->GetActiveWeapon()->GetItemDefinitionIndex();
+
 	if (gCvars.triggerbot_autobackstab)
 	{
-		auto wepid = pLocal->GetActiveWeapon()->GetItemDefinitionIndex();
 		CBaseCombatWeapon* pWep = pLocal->GetActiveWeapon();
 		if (pLocal->szGetClass() == "Spy" && Util->IsOtherSlot(pLocal, pLocal->GetActiveWeapon()) && pWep->CanBackStab())
 			pCommand->buttons |= IN_ATTACK;
@@ -125,7 +126,11 @@ void CMisc::Run(CBaseEntity* pLocal, CUserCmd* pCommand)
 
 		last_spam_point = std::chrono::system_clock::now();
 	}
-
+	auto pWep = pLocal->GetActiveWeapon();
+	if (gCvars.misc_miniguntoggle && pWep->GetSlot() == 0) //suggested by Cyanide01 on UC.
+	{
+		pCommand->buttons &= IN_ATTACK2;
+	}
 
 	static ConVar* sv_cheats = gInts.cvar->FindVar("sv_cheats");
 	if (gCvars.misc_cheatsbypass)
